@@ -4,12 +4,64 @@
   <title>Project Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/vendor/foundation.css">
+  <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body ng-app="PopQuiz">
 
-  <div class="container">
+<div class="row">
 
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#/"><span>Menu</span></a></li>
+    </ul>
+
+    <div class="logo">
+      <a href="#"><img src="images/logo.png"/></a>
+    </div>
+
+    <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="center-buttons">
+      <li class="divider"></li>
+      <li><a href="#/">Play!</a></li>
+      <li class="divider"></li>
+      <li><a href="#/signup">Sign Up</a></li>
+      <li class="divider"></li>
+      <li><a href="#/add">Add Quiz</a></li>
+      <li class="divider"></li>
+    </ul>
+    </section>
+  </nav>
+
+  <div class="row container" ng-view>
+
+
+
+  </div>
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-5 columns">
+          <p>© Copyright M Slocomb 2015</p>
+        </div>
+        <div class="large-7 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Section 1</a></li>
+            <li><a href="#">Section 2</a></li>
+            <li><a href="#">Section 3</a></li>
+            <li><a href="#">Section 4</a></li>
+            <li><a href="#">Section 5</a></li>
+            <li><a href="#">Section 6</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   </div>
 
   <!-- VENDOR -->
@@ -20,6 +72,11 @@
 
   <!-- MAIN -->
   <script src="js/main.js"></script>
+
+  <!-- CONTROLLERS -->
+  <script src="js/quizzes/user.controller.js"></script>
+  <script src="js/quizzes/quiz.controller.js"></script>
+  <script src="js/quizzes/play.controller.js"></script>
 
 </body>
 </html>
