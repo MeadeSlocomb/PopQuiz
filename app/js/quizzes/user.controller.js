@@ -32,9 +32,9 @@
 
         $http.post(PARSE.URL + 'classes/_User', y, PARSE.CONFIG)
 
-        .success( function () {
+        .success( function (data) {
 
-          Cookies.set('access_token', data.access_token);
+          Cookies.set('sessionToken', data.sessionToken);
           Cookies.set('username', data.username);
           $scope.user = {};
 

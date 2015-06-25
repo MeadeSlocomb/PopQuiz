@@ -32,5 +32,8 @@
     "gulp-wrap": "^0.11.0",
     "jshint-stylish": "^2.0.0",
     "main-bower-files": "^2.8.0"
+  },
+  "dependencies": {
+    "cookies": "^0.5.0"
   }
 }
