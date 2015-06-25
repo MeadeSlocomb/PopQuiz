@@ -36,6 +36,13 @@
       controller: 'User',
       templateUrl: 'js/quizzes/signup.tpl.html'
 
+    })
+
+    .when('/signin', {
+
+      controller: 'User',
+      templateUrl: 'js/quizzes/signin.tpl.html'
+
     });
 
 
