@@ -18,12 +18,12 @@
         this.passConfirm = options.passConfirm;
       };
 
+
       // Session Constructor
-      var session = function (options) {
-        this.username = options.userName;
+      var UserLogin = function (options) {
+        this.username = options.username;
         this.password = options.password;
       };
-
 
 
       // Add User Method
@@ -34,28 +34,35 @@
 
         .success( function () {
 
-         $scope.user = {};
-
-        });
-
-
-      };
-
-      // Login Method
-      $scope.login = function (x) {
-        var y = new session(x);
-
-        $http.post(PARSE.URL + 'classes/_User', y, PARSE.CONFIG)
-
-        .success( function () {
-
           Cookies.set('access_token', data.access_token);
           Cookies.set('username', data.username);
-          $scope.session = {};
+          $scope.user = {};
 
         });
+      };
 
 
+      // Login Method
+      $scope.signin = function (x) {
+        var y = new UserLogin(x);
+        var u = encodeURIComponent('username=' + y.username);
+        var p = encodeURIComponent('password=' + y.password);
+
+        $http({
+          method: 'GET',
+          url: PARSE.URL + 'login',
+          headers: PARSE.CONFIG.headers,
+          params: y
+        })
+
+        .success( function (data) {
+
+          $scope.session = {};
+          Cookies.set('sessionToken', data.sessionToken);
+          Cookies.set('username', data.username);
+
+
+        });
       };
 
     }
