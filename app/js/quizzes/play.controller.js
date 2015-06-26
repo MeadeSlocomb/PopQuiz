@@ -8,15 +8,13 @@
 
     function ($scope, $http, PARSE) {
 
-      // $scope.title = 'My Vehicles';
-
-      $scope.QuizList = [];
-
       $http.get(PARSE.URL + 'classes/Quiz', PARSE.CONFIG)
 
       .success( function (data) {
 
         $scope.QuizList = data.results;
+
+        console.log(data.results);
 
       });
 
