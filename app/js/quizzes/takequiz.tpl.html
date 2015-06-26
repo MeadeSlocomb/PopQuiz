@@ -1,0 +1,19 @@
+<div class="small-5 large-centered columns">
+
+  <form ng-submit="addUser(user)">
+    <fieldset>
+      <legend>{{ quiz.title }}</legend>
+      <p>{{ quiz.desc }}</p>
+
+      <ul>
+        <li ng-repeat="question in quiz.quiz">
+          <label>{{ question.question }}
+            <input id="answer{{ number }}" type="text">
+          </label>
+        </li>
+      </ul>
+
+    </fieldset>
+  </form>
+
+</div>

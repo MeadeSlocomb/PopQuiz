@@ -43,6 +43,13 @@
       controller: 'User',
       templateUrl: 'js/quizzes/signin.tpl.html'
 
+    })
+
+    .when('/quiz/:id', {
+
+      controller: 'TakeQuiz',
+      templateUrl: 'js/quizzes/takequiz.tpl.html'
+
     });
 
 

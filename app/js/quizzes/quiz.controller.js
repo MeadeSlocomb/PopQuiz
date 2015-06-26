@@ -36,15 +36,17 @@
         });
       };
 
+      //Append Question to New Quiz Form
       $scope.addQuestion = function(){
         var quest = {
         question: '',
         answer: '',
         number: $scope.q.quiz.length + 1
       };
-        console.log(quest);
         $scope.q.quiz.push(quest);
       };
+
+
 
     }
   ])

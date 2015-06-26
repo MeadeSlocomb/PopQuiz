@@ -14,8 +14,6 @@
 
         $scope.QuizList = data.results;
 
-        console.log(data.results);
-
       });
 
     }
