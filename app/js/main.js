@@ -26,7 +26,7 @@
 
     .when('/addquiz', {
 
-      controller: 'AddQuiz',
+      controller: 'Quiz',
       templateUrl: 'js/quizzes/add.tpl.html'
 
     })

@@ -8,27 +8,42 @@
 
     function ($scope, $http, PARSE, $location) {
 
-      // Vehicle Constructor
-      var Quiz = function (options) {
-        this.quizName = options.quizName;
-        // this.quizCreator = options.quizCreator;
-        // this.numberOfQuestions = options.numberOfQuestions;
-        this.quiz = options.quiz;
+
+      // Quiz Constructor
+      var Quiz = function () {
+        this.title = '';
+        this.desc = '';
+        this.type = '';
+        this.quiz = [{
+          question: '',
+          answer: '',
+          number: 1
+        }];
       };
 
-      // Add Vehicle Method
-      $scope.addQuiz = function (x) {
-        var y = new Quiz(x);
+      // Quiz Object
+      $scope.q = new Quiz();
 
-        $http.post(PARSE.URL + 'classes/Quiz', y, PARSE.CONFIG)
+      // Add Quiz Method
+      $scope.addQuiz = function (x) {
+
+        $http.post(PARSE.URL + 'classes/Quiz', $scope.q, PARSE.CONFIG)
 
         .success( function () {
 
-          $scope.quiz = {};
+          $scope.q = new Quiz();
 
         });
+      };
 
-
+      $scope.addQuestion = function(){
+        var quest = {
+        question: '',
+        answer: '',
+        number: $scope.q.quiz.length + 1
+      };
+        console.log(quest);
+        $scope.q.quiz.push(quest);
       };
 
     }

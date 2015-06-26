@@ -1,6 +1,39 @@
-<h3>Add A Quiz</h3>
-<form ng-submit="">
-  <input type="text" ng-model="quiz.name" placeholder="Quiz Name">
-  <button>Add Question</button>
-  <button>Submit Quiz</button>
-</form>
+<div class="small-9 large-centered columns">
+
+  <form>
+    <fieldset>
+      <legend>Add Quiz</legend>
+
+      <label>Quiz Title
+        <input type="text" ng-model="q.title" placeholder="Quiz Title">
+      </label>
+
+      <label>Quiz Description
+        <input type="text" ng-model="q.desc" placeholder="Description">
+      </label>
+
+      <ul>
+        <li ng-repeat="question in q.quiz">
+
+            <label>Question {{ question.number }}
+              <input type="text" ng-model="question.question" placeholder="Question">
+
+
+            </label>
+
+            <label>Answer
+              <input type="text" ng-model="question.answer" placeholder="Answer">
+            </label>
+
+        </li>
+
+      </ul>
+
+      <button type="button" ng-click="addQuestion()" class="small-12 large-centered columns">Add Question</button>
+
+      <button type="button" ng-click="addQuiz()" class="small-12 large-centered columns">Post Quiz</button>
+
+    </fieldset>
+  </form>
+
+</div>
