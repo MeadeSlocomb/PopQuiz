@@ -10,17 +10,33 @@
 
       var id = $routeParams.id;
 
-      // Pulls quiz from database to display
 
+      // Pulls quiz from database to display
       $http.get(PARSE.URL + 'classes/Quiz/' + id, PARSE.CONFIG)
 
       .success( function (data) {
 
         $scope.quiz = data;
 
-        console.log($scope.quiz);
-
       });
+
+      // Submitted Quiz Constructor
+      var submitQuiz = function () {
+        this.answerArray = '';
+        // this.answerArray = [{
+        //   answer: ''
+        // }];
+      };
+
+      // Submitted Quiz Object
+      var sq = new submitQuiz();
+
+      // Checks to see if answers are correct
+
+      $scope.checkAnswers = function(x) {
+        console.log(sq);
+
+      }
 
 
 

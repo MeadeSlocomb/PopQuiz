@@ -1,6 +1,6 @@
 <div class="small-5 large-centered columns">
 
-  <form ng-submit="addUser(user)">
+  <form>
     <fieldset>
       <legend>{{ quiz.title }}</legend>
       <p>{{ quiz.desc }}</p>
@@ -8,10 +8,13 @@
       <ul>
         <li ng-repeat="question in quiz.quiz">
           <label>{{ question.question }}
-            <input id="answer{{ number }}" type="text">
+            <input ng-model="answer[question.number]" type="text">
           </label>
         </li>
       </ul>
+
+      <button type="button" ng-click="checkAnswers()" class="small-12 large-centered columns">Check your answers!</button>
+
 
     </fieldset>
   </form>
