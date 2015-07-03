@@ -20,7 +20,6 @@ body {
     top: 0px;
     position: absolute;
   }
-
 }
 
 // some mobile resets
@@ -63,9 +62,11 @@ body {
   background-color: RGBA(235, 235, 235, .7);
   width: 300px;
   height: 300px;
-  position: absolute;
-  bottom: 30%;
-  left: 35%;
+  margin-left: -150px;
+  margin-top: -150px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   border-radius: 100%;
   vertical-align: middle;
   text-align: center;
@@ -82,7 +83,7 @@ body {
 }
 
 .scoreText {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .scoreText p {
@@ -101,16 +102,22 @@ body {
   font-style: italic;
 }
 
+.ok {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
 
 .hidden {
   opacity: 0;
-  z-index: -999;
-  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  visibility: hidden;
+  -webkit-transition:opacity cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition: opacity cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
 }
 
 .showing{
+  visibility: visible;
   opacity: 1;
-  z-index: 999;
 }
 

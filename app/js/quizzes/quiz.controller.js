@@ -33,6 +33,7 @@
         .success( function () {
 
           $scope.q = new Quiz();
+          $location.path('/');
 
         });
       };
