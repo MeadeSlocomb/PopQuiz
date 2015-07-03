@@ -4,7 +4,7 @@
     <li class="quizList" ng-repeat="quiz in QuizList">
 
       <div class="row">
-        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
+        <div class="large-2 columns small-3"><img src="{{ quiz.type }}"/></div>
           <div class="large-10 columns" ng-repeat:"quizzes in ">
 
             <p><strong>{{ quiz.title }}</strong><br>

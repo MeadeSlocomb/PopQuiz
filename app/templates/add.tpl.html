@@ -8,6 +8,18 @@
         <input type="text" ng-model="q.title" placeholder="Quiz Title">
       </label>
 
+      <label>Quiz Type
+        <select ng-model="q.type" name="Type">
+          <option value="images/geography.png">Geography</option>
+          <option value="images/math.png" selected>Math</option>
+          <option value="images/science.png">Science</option>
+          <option value="images/history.png">History</option>
+          <option value="images/entertainment.png">Film, TV and Theatre</option>
+          <option value="images/music.png">Music</option>
+          <option value="wildcard">WildCard</option>
+        </select>
+      </label>
+
       <label>Quiz Description
         <input type="text" ng-model="q.desc" placeholder="Description">
       </label>

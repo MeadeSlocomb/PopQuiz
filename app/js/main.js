@@ -20,35 +20,35 @@
     $routeProvider.when('/', {
 
       controller: 'Play',
-      templateUrl: 'js/quizzes/play.tpl.html'
+      templateUrl: 'templates/play.tpl.html'
 
     })
 
     .when('/addquiz', {
 
       controller: 'Quiz',
-      templateUrl: 'js/quizzes/add.tpl.html'
+      templateUrl: 'templates/add.tpl.html'
 
     })
 
     .when('/signup', {
 
       controller: 'User',
-      templateUrl: 'js/quizzes/signup.tpl.html'
+      templateUrl: 'templates/signup.tpl.html'
 
     })
 
     .when('/signin', {
 
       controller: 'User',
-      templateUrl: 'js/quizzes/signin.tpl.html'
+      templateUrl: 'templates/signin.tpl.html'
 
     })
 
     .when('/quiz/:id', {
 
       controller: 'TakeQuiz',
-      templateUrl: 'js/quizzes/takequiz.tpl.html'
+      templateUrl: 'templates/takequiz.tpl.html'
 
     });
 
