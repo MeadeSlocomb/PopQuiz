@@ -1,5 +1,7 @@
 body {
-  font-family: 'Bree Serif', serif; }
+  font-family: 'Bree Serif', serif;
+  background-color: RGBA(255, 255, 255, 1);
+  z-index: 10; }
 
 @media only screen and (min-width: 40em) {
   .top-bar {
@@ -36,3 +38,48 @@ body {
 
 .quizList {
   list-style-type: none; }
+
+.scoreOverlay {
+  background-color: RGBA(235, 235, 235, 0.7);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 30%;
+  left: 35%;
+  border-radius: 100%;
+  vertical-align: middle;
+  text-align: center; }
+
+.score {
+  background-color: RGBA(255, 255, 255, 1);
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  margin: 50px auto;
+  vertical-align: middle;
+  text-align: center; }
+
+.scoreText {
+  padding-top: 40px; }
+
+.scoreText p {
+  margin-bottom: 5px; }
+
+.correct {
+  color: green; }
+
+.incorrect {
+  color: red; }
+
+.accuracy {
+  font-style: italic; }
+
+.hidden {
+  opacity: 0;
+  z-index: -999;
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s; }
+
+.showing {
+  opacity: 1;
+  z-index: 999; }

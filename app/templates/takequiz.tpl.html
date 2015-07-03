@@ -1,4 +1,4 @@
-<div class="small-5 large-centered columns">
+<div class="small-5 large-centered columns background">
 
   <form>
     <fieldset>
@@ -13,10 +13,21 @@
         </li>
       </ul>
 
-      <button type="button" ng-click="checkAnswers()" class="small-12 large-centered columns">Check your answers!</button>
+      <button ng-model:"results" type="button" ng-click="checkAnswers(); myVar='showing'" class="small-12 large-centered columns">Check your answers!</button>
 
 
     </fieldset>
   </form>
 
+</div>
+
+<div ng-class="myVar" class="scoreOverlay hidden">
+  <div class="small-6 large-centered columns score">
+    <div class="scoreText">
+        <p>Your score:</p>
+        <p class="correct">Correct: {{ correct }}</p>
+        <p class="incorrect">Incorrect: {{ incorrect }}</p>
+        <p class="accuracy">Accuracy: {{ accuracy }}% </p>
+    </div>
+  </div>
 </div>

@@ -10,14 +10,10 @@
 
       var id = $routeParams.id;
 
-      // Answer Constructor
-      var Score = function () {
-        this.correct = 0;
-        this.incorrect = 0;
-        };
+      //Score variables
 
-      // Answer Object
-      $scope.s = new Score();
+      $scope.correct = 0;
+      $scope.incorrect = 0;
 
 
       // Pulls quiz from database to display
@@ -45,17 +41,13 @@
       $scope.checkAnswers = function() {
         _.each($scope.questions, function(x){
           if (x.answer == x.guess){
-            $scope.s.correct ++;
+            $scope.correct ++;
           } else {
-            $scope.s.incorrect ++;
+            $scope.incorrect ++;
           };
         });
-
-        console.log($scope.s);
-
+        $scope.accuracy = $scope.correct / ($scope.correct + $scope.incorrect);
       };
-
-
 
     }
   ]);
