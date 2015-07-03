@@ -25,7 +25,7 @@
       $scope.q = new Quiz();
 
       // Add Quiz Method
-      $scope.addQuiz = function (x) {
+      $scope.addQuiz = function () {
 
         $http.post(PARSE.URL + 'classes/Quiz', $scope.q, PARSE.CONFIG)
 

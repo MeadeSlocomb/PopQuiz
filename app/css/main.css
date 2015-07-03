@@ -30,3 +30,9 @@ body {
 
 .play {
   background-color: #7EF93E; }
+
+.body {
+  margin-top: 15px; }
+
+.quizList {
+  list-style-type: none; }

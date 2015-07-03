@@ -22,10 +22,9 @@
 
       // Submitted Quiz Constructor
       var submitQuiz = function () {
-        this.answerArray = '';
-        // this.answerArray = [{
-        //   answer: ''
-        // }];
+        this.answerArray = [{
+          answer: ''
+        }];
       };
 
       // Submitted Quiz Object

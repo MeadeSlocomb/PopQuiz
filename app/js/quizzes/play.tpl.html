@@ -1,28 +1,26 @@
-<div class="large-9 columns">
+<div class="large-12 columns body">
 
-<div class="row">
-  <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
-    <div class="large-10 columns" ng-repeat:"quizzes in ">
+  <ul>
+    <li class="quizList" ng-repeat="quiz in QuizList">
 
-      <ul>
+      <div class="row">
+        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
+          <div class="large-10 columns" ng-repeat:"quizzes in ">
 
-        <li ng-repeat="quiz in QuizList">
-          <p><strong>{{ quiz.title }}</strong><br>
-          {{ quiz.desc }}</p>
+            <p><strong>{{ quiz.title }}</strong><br>
+            {{ quiz.desc }}</p>
 
-          <ul class="inline-list">
-            <li><a href="#/quiz/{{ quiz.objectId }}">Play</a></li>
-            <li><a href="">Share</a></li>
-          </ul>
+            <ul class="inline-list">
+              <li><a href="#/quiz/{{ quiz.objectId }}">Play</a></li>
+              <li><a href="">Share</a></li>
+            </ul>
 
-        </li>
-      </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
 
-    </div>
-  </div>
 </div>
 
-<aside class="large-3 columns hide-for-small">
-  <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
-  <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
-</aside>
+
