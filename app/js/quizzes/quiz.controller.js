@@ -17,6 +17,7 @@
         this.quiz = [{
           question: '',
           answer: '',
+          guess: '',
           number: 1
         }];
       };
