@@ -51,12 +51,65 @@ body {
   font-size: 24px;
 }
 
+.welcome {
+  color: white;
+  position: absolute;
+  left: 700px;
+  top:2px;
+  width: 200px;
+  font-size: 18px;
+}
+
+.signout {
+  color: white;
+  position: absolute;
+  left: 925px;
+  top: 3px;
+  font-size: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+
 .menu-icon {
   padding-top: 1.2rem;
 }
 
 .top-bar.expanded {
   background: #333333;
+}
+
+//Greeting color animation
+
+
+#colorCycle {
+
+  animation-name: homeCycle;
+  animation-duration:30s;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+
+  -webkit-animation-name: homeCycle;
+  -webkit-animation-duration:30s;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-iteration-count:infinite;
+}
+
+@keyframes homeCycle {
+0% {color: RGBA(171, 212, 253, 1);}
+16.7% {color: RGBA(254, 232, 146, 1);}
+33.4% {color: RGBA(253, 141, 132, 1);}
+50.0% {color: RGBA(255, 191, 100, 1);}
+66.7% {color: RGBA(206, 180, 253, 1);}
+83.3% {color: RGBA(255, 191, 100, 1);}
+}
+
+@-webkit-keyframes homeCycle {
+0% {color: RGBA(171, 212, 253, 1);}
+16.7% {color: RGBA(254, 232, 146, 1);}
+33.4% {color: RGBA(253, 141, 132, 1);}
+50.0% {color: RGBA(255, 191, 100, 1);}
+66.7% {color: RGBA(206, 180, 253, 1);}
+83.3% {color: RGBA(255, 191, 100, 1);}
 }
 
 

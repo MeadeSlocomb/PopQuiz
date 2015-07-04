@@ -23,7 +23,8 @@
     "angular-route": "~1.4.1",
     "foundation": "~5.5.2",
     "cookies.js": "*",
-    "cookies-js": "~1.2.1"
+    "cookies-js": "~1.2.1",
+    "font-awesome": "~4.3.0"
   },
   "devDependencies": {
     "mocha": "~2.2.5",

@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="http://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/vendor/font-awesome.css">
   <link rel="stylesheet" href="css/vendor/normalize.css">
   <link rel="stylesheet" href="css/vendor/foundation.css">
   <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
+
 <body ng-app="PopQuiz" class="wrapper">
   <div class="row">
 
@@ -20,7 +23,8 @@
       <div class="logo">
         <a href="/"><img src="images/logo.png"/></a>
         <span class="logotext">popQuiz!</span>
-        <span class="welcome">Welcome, {{ userName }}</span>
+        <div id="colorCycle" class="welcome" ng-bind-html="welcome()"></div>
+        <div ng-click="signout()" class="signout" ng-bind-html="signoutTpl()"></div>
       </div>
 
       <section class="top-bar-section">

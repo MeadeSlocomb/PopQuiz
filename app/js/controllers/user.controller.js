@@ -62,11 +62,15 @@
 
           $scope.session = {};
           Cookies.set('sessionToken', data.sessionToken);
-          Cookies.set('username', data.username);
+          Cookies.set('username', data.username)
+
+          $location.path('/');
 
 
         });
       };
+
+
 
     }
   ])
