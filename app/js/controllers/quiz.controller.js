@@ -27,7 +27,7 @@
       // Quiz Object
       $scope.q = new Quiz();
 
-      // Add Quiz Method
+      // Add Quiz Method - Adds quiz to database and routes to home page
       $scope.addQuiz = function () {
 
         $scope.q.creator = Cookies.get('username');
@@ -59,11 +59,6 @@
         $http.post(PARSE.URL + 'classes/Quiz', $scope.q, PARSE.CONFIG)
 
         .success( function () {
-
-          // $scope.q = new Quiz();
-
-          console.log($scope.q);
-
 
             $location.path('/');
 

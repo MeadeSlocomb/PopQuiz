@@ -25,6 +25,9 @@
         this.password = options.password;
       };
 
+      // Sets username to variable for greeting
+      $scope.userName = Cookies.get('username');
+
 
       // Add User Method
       $scope.addUser = function (x) {

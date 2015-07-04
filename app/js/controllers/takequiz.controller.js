@@ -10,6 +10,9 @@
 
       var id = $routeParams.id;
 
+      // Sets username to variable for greeting
+      $scope.userName = Cookies.get('username');
+
       //Score variables
 
       $scope.correct = 0;

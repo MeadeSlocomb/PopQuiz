@@ -13,13 +13,14 @@
 <body ng-app="PopQuiz" class="wrapper">
   <div class="row">
 
-    <nav class="top-bar" data-topbar>
+    <nav class="top-bar" data-topbar ng-controller="NavCtrl">
       <ul class="title-area">
       </ul>
 
       <div class="logo">
         <a href="/"><img src="images/logo.png"/></a>
         <span class="logotext">popQuiz!</span>
+        <span class="welcome">Welcome, {{ userName }}</span>
       </div>
 
       <section class="top-bar-section">
@@ -74,10 +75,12 @@
   <script src="js/main.js"></script>
 
   <!-- CONTROLLERS -->
-  <script src="js/quizzes/user.controller.js"></script>
-  <script src="js/quizzes/quiz.controller.js"></script>
-  <script src="js/quizzes/play.controller.js"></script>
-  <script src="js/quizzes/takequiz.controller.js"></script>
+  <script src="js/controllers/user.controller.js"></script>
+  <script src="js/controllers/quiz.controller.js"></script>
+  <script src="js/controllers/play.controller.js"></script>
+  <script src="js/controllers/takequiz.controller.js"></script>
+  <script src="js/controllers/nav.controller.js"></script>
+
 
 </body>
 </html>
