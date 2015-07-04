@@ -145,7 +145,8 @@ body {
   left: 50%;
   border-radius: 100%;
   vertical-align: middle;
-  text-align: center; }
+  text-align: center;
+  z-index: 1; }
 
 .score {
   background-color: RGBA(255, 255, 255, 1);
@@ -174,7 +175,8 @@ body {
 .ok {
   padding: 5px;
   border-radius: 5px;
-  font-size: 10px; }
+  font-size: 10px;
+  z-index: 999; }
 
 .hidden {
   opacity: 0;
@@ -185,3 +187,6 @@ body {
 .showing {
   visibility: visible;
   opacity: 1; }
+
+footer {
+  z-index: -1; }

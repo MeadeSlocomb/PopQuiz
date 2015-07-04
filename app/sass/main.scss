@@ -192,6 +192,8 @@ body {
   border-radius: 100%;
   vertical-align: middle;
   text-align: center;
+  z-index: 1;
+
 }
 
 .score {
@@ -228,6 +230,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   font-size: 10px;
+  z-index: 999;
 }
 
 .hidden {
@@ -244,4 +247,8 @@ body {
 
 
 //Footer
+
+footer {
+  z-index: -1;
+}
 
