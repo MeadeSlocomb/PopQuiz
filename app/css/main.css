@@ -1,7 +1,8 @@
 body {
   font-family: 'Bree Serif', serif;
   background-color: RGBA(255, 255, 255, 1);
-  font-family: 'Sigmar One', cursive; }
+  font-family: 'Sigmar One', cursive;
+  height: 100%; }
 
 @media only screen and (min-width: 40em) {
   .top-bar {
@@ -23,8 +24,12 @@ body {
 .logo img {
   color: #eee; }
 
-.logo span {
-  color: white; }
+.logotext {
+  color: white;
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  font-size: 24px; }
 
 .menu-icon {
   padding-top: 1.2rem; }
@@ -33,13 +38,46 @@ body {
   background: #333333; }
 
 .play {
-  background-color: #7EF93E; }
-
-.body {
-  margin-top: 15px; }
+  margin-top: 20px; }
 
 .quizList {
   list-style-type: none; }
+
+.quiz {
+  border: 1px black solid;
+  border-radius: 10px;
+  padding-top: 20px; }
+
+.spacer {
+  height: 10px;
+  width: 100%; }
+
+.blue:hover {
+  background-color: RGBA(171, 212, 253, 1); }
+
+.yellow:hover {
+  background-color: RGBA(254, 232, 146, 1); }
+
+.red:hover {
+  background-color: RGBA(253, 141, 132, 1); }
+
+.orange:hover {
+  background-color: RGBA(255, 191, 100, 1); }
+
+.purple:hover {
+  background-color: RGBA(206, 180, 253, 1); }
+
+.green:hover {
+  background-color: RGBA(146, 253, 144, 1); }
+
+.pink:hover {
+  background-color: RGBA(255, 174, 240, 1); }
+
+.signin {
+  margin-bottom: 220px; }
+
+.signup {
+  margin-bottom: 0px; }
 
 .scoreOverlay {
   background-color: RGBA(235, 235, 235, 0.7);

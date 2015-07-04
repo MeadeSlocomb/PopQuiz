@@ -13,6 +13,8 @@
       var Quiz = function () {
         this.title = '';
         this.desc = '';
+        this.color = '';
+        this.creator = '';
         this.type = '';
         this.quiz = [{
           question: '',
@@ -28,12 +30,42 @@
       // Add Quiz Method
       $scope.addQuiz = function () {
 
+        $scope.q.creator = Cookies.get('username');
+
+        switch ($scope.q.type) {
+        case "images/geography.png":
+          $scope.q.color = 'blue';
+          break;
+        case "images/math.png":
+          $scope.q.color = 'red';
+          break;
+        case "images/science.png":
+          $scope.q.color = 'green';
+          break;
+        case "images/history.png":
+          $scope.q.color = 'yellow';
+          break;
+        case "images/entertainment.png":
+          $scope.q.color = 'pink';
+          break;
+        case "images/music.png":
+          $scope.q.color = 'purple';
+          break;
+        case "images/wildcard.png":
+          $scope.q.color = 'orange';
+          break;
+        }
+
         $http.post(PARSE.URL + 'classes/Quiz', $scope.q, PARSE.CONFIG)
 
         .success( function () {
 
-          $scope.q = new Quiz();
-          $location.path('/');
+          // $scope.q = new Quiz();
+
+          console.log($scope.q);
+
+
+            $location.path('/');
 
         });
       };
@@ -47,8 +79,6 @@
       };
         $scope.q.quiz.push(quest);
       };
-
-
 
     }
   ])

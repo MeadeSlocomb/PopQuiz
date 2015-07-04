@@ -1,8 +1,14 @@
+//General  Styling
+
 body {
   font-family: 'Bree Serif', serif;
   background-color: RGBA(255, 255, 255, 1);
   font-family: 'Sigmar One', cursive;
+  height: 100%;
 }
+
+
+//Nav Menu
 
 
 @media only screen and (min-width: 40em) {
@@ -27,8 +33,6 @@ body {
   }
 }
 
-// some mobile resets
-
 .logo {
   max-width: 2rem;
   margin-top: -3px;
@@ -39,8 +43,12 @@ body {
   color: #eee;
 }
 
-.logo span {
+.logotext {
   color: white;
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  font-size: 24px;
 }
 
 .menu-icon {
@@ -51,18 +59,74 @@ body {
   background: #333333;
 }
 
-.play {
-  background-color: #7EF93E;
-}
 
-.body {
-  margin-top: 15px;
+// Body
+
+
+.play {
+  margin-top: 20px;
 }
 
 .quizList {
   list-style-type: none;
 }
 
+.quiz {
+  border: 1px black solid;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.spacer {
+  height: 10px;
+  width: 100%;
+}
+
+
+//Color on hover
+
+.blue:hover {
+  background-color: RGBA(171, 212, 253, 1);
+}
+
+.yellow:hover {
+  background-color: RGBA(254, 232, 146, 1);
+}
+
+.red:hover {
+  background-color: RGBA(253, 141, 132, 1);
+}
+
+.orange:hover {
+  background-color: RGBA(255, 191, 100, 1);
+}
+
+.purple:hover {
+  background-color: RGBA(206, 180, 253, 1);
+}
+
+.green:hover {
+  background-color: RGBA(146, 253, 144, 1);
+}
+
+.pink:hover {
+  background-color: RGBA(255, 174, 240, 1);
+}
+
+
+//Signin
+
+.signin {
+  margin-bottom: 220px;
+}
+
+.signup {
+  margin-bottom: 0px;
+}
+
+
+
+// Quiz Score Popup
 .scoreOverlay {
   background-color: RGBA(235, 235, 235, .7);
   width: 300px;
@@ -113,7 +177,6 @@ body {
   font-size: 10px;
 }
 
-
 .hidden {
   opacity: 0;
   visibility: hidden;
@@ -125,4 +188,7 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+
+//Footer
 
