@@ -1,11 +1,13 @@
 body {
   font-family: 'Bree Serif', serif;
   background-color: RGBA(255, 255, 255, 1);
-  z-index: 10; }
+  font-family: 'Sigmar One', cursive; }
 
 @media only screen and (min-width: 40em) {
   .top-bar {
     text-align: center; }
+  .top-bar-section ul li > a {
+    font-family: 'Sigmar One', cursive; }
   ul.center-buttons {
     display: inline-block; }
   .logo {

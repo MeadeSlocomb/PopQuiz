@@ -1,7 +1,7 @@
 body {
   font-family: 'Bree Serif', serif;
   background-color: RGBA(255, 255, 255, 1);
-  z-index: 10;
+  font-family: 'Sigmar One', cursive;
 }
 
 
@@ -9,6 +9,11 @@ body {
 
   .top-bar {
     text-align: center;
+  }
+
+  .top-bar-section ul li > a{
+  font-family: 'Sigmar One', cursive;
+
   }
 
   ul.center-buttons {
