@@ -1,6 +1,6 @@
-## Welcome to popQuiz!
+# Welcome to popQuiz!
 
-#popQuiz! is a trivia app that draws upon user generated content.
+##popQuiz! is a trivia app that draws upon user generated content.
 
 Users may submit custom quizzes as well as take quizzes submitted by other users.
 
