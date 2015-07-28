@@ -1,14 +1,27 @@
-## Welcome to My Angular Project
+## Welcome to popQuiz!
 
-> I am your Readme.md file, you should probably update me.
+#popQuiz! is a trivia app that draws upon user generated content.
 
-
-## Usage
-
-This template contains some simple `gulp` tasks. They are as follows:
+Users may submit custom quizzes as well as take quizzes submitted by other users.
 
 
-- `gulp watch`: This will launch a Node Server and start the standard `watchlist` task
-- `gulp bower`: This will move the bower components into their proper location. This will run during the `watch` task, but you may need to run it manually once in a while
+A deployed prototype of the app can be viewed here:
 
-There are many more tasks, and you really should read through the `gulpfile.js`, but the ones above will take care of you in most cases.
+http://development.meade-popquiz.divshot.io/#/
+
+
+Besides the obvious HTML5, CSS3 and JavaScript, this app was built using:
+
+AngularJS
+JQuery
+Underscore.js
+Cookies.js
+Foundation.css
+Font-Awesome.css
+
+I constructed the backend using parse.com.
+
+Please direct any questions or comments to me at meade.slocomb@gmail.com
+
+
+
